@@ -117,13 +117,12 @@ a {
 .conteudo2 {
     width: 90%;
     margin: 50px;
-    background-color:;
 }
 
 .conteudo2 div {
     display: inline-block;
     width: 30%;
-    padding: 30px;
+    padding: 31px;
     border-top: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
