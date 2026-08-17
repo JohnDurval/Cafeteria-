@@ -1,9 +1,385 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: IBM Plex Mono;
+    
 }
 
-header
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #F4EFE5;
+    font-family: IBM Plex Mono;
+    nav{
+        display: flex;
+        gap: 22px;
+        
+    }
+    
+    a{  
+        font-size: 15px;
+        
+        text-decoration: none;
+         color: #000000;
+
+         &:hover{
+             text-decoration: underline;
+            color: #B53A27;
+         }
+    } 
+    
+    img{
+        width: 100px;
+    }
+
+}
+
+.heroHome {
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 100px;
+    display: flex;
+
+    overflow: hidden;
+
+    background-color: #F4EFE5;
+}
+
+.esquerdaHero {
+    width: 50%;
+    min-height: 100vh;
+
+    background-color: #172923;
+    color: #FFFFF6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 7.5%;
+
+    box-sizing: border-box;
+}
+
+.linha1 {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 0 28px 0;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #E9D9A3;
+}
+.linha1::before {
+    content: "";
+
+    width: 22px;
+    height: 1px;
+
+    background-color: #B53A27;
+
+    display: block;
+}
+
+.esquerdaHero h1 {
+    max-width: 620px;
+
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(58px, 5.5vw, 86px);
+
+    font-weight: 400;
+
+    line-height: 0.91;
+
+    letter-spacing: -2px;
+
+    color: #FFFFF6;
+}
+
+.ritual {
+    display: inline;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-style: italic;
+    font-weight: 500;
+
+    color: #E9D9A3;
+}
+
+.esquerdaHero h1 + p {
+    width: 430px;
+
+    margin: 36px 0 38px 0;
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #E9E5DC;
+}
+
+.rua{
+    width: 600px;
+    font-size: 14px;
+}
+
+.linkHero {
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+
+    margin-bottom: 42px;
+}
+
+.linkHero a {
+    display: inline-flex;
+    align-items: center;
+
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 0.8px;
+
+    color: #FFFFF6;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+.linkHero a::after {
+    content: "→";
+
+    margin-left: 9px;
+
+    color: #E9D9A3;
+
+    font-size: 12px;
+
+    transition: transform 0.25s ease;
+
+
+
+
+}
+
+
+.linkHero a:hover {
+    color: #E9D9A3;
+}
+
+.fechado {
+    color: #B53A27;
+}
+
+.direitaHero {
+    width: 50%;
+    min-height: 100vh;
+
+    background-color: #E9D9A3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 5%;
+
+    box-sizing: border-box;
+}
+
+.imagemDireita {
+    position: relative;
+
+    width: 100%;
+    max-width: 550px;
+}
+
+
+.imagemDireita > img {
+    display: block;
+
+    width: 100%;
+    height: 620px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border: none;
+}
+
+.caixinha {
+    position: absolute;
+
+    right: -12px;
+    bottom: 0;
+
+    width: 175px;
+    min-height: 58px;
+
+    display: flex;
+    align-items: stretch;
+
+    background-color: #FFFFF6;
+
+    border: 1px solid #E9E5DC;
+
+    box-sizing: border-box;
+}
+
+.horarioCaixinha {
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 10px;
+
+    box-sizing: border-box;
+}
+
+
+.horarioCaixinha p {
+    margin: 0;
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 9px;
+
+    color: #B53A27;
+}
+
+.textoCaixinha {
+    flex: 1;
+
+    padding: 10px 10px 10px 0;
+}
+
+
+.textoCaixinha p {
+
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 15px;
+
+    line-height: 1.15;
+
+    color: #000000;
+}
+
+.linhaazul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #8EB8C1;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.antecessorCard{
+
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    gap: 1px;
+}
+
+.card{
+    border: solid 0.001px;
+    padding: 40px;
+    width: 470px;
+    align-items: center;
+
+    a{
+        display: flex;
+        margin-top: 14px;
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    h3{
+        color: #B53A27;
+        font-size: 15px;
+        margin-bottom: 5px;
+        font-weight: 430;
+    }
+
+    h1{
+        font-family: "Cormorant Garamond", serif;
+        font-size: 36px;
+        margin-bottom: 7px;
+        font-weight: 500;
+    }
+
+    p{
+        color: #172923;
+        width: 300px;
+    }
+}
+
+.partefinal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #E9D9A3;
+
+    p{
+        margin-bottom: 20px;
+        color: #172923;
+    }
+
+    h1{
+        color: #172923;
+        font-size: 50px;
+        
+    }
+
+    .botao{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .botaoCardapio{
+            width: 250px;
+            padding: 20px;
+            background-color: #172923;
+            color: #FFFFF6;
+        }
+
+    }
+}
+
+
+
+
 
 
 
@@ -13,7 +389,7 @@ footer{
     justify-content: space-evenly;
     gap: 400px;
     padding: 20px;
-    background-color: #172923;
+    background-color: #E9E5DC;
     color: white;
     
     img{
