@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #F4EFE5;
+    font-family: IBM Plex Mono;
+    nav{
+        display: flex;
+        gap: 22px;
+        
+    }
+    
+    a{  
+        font-size: 15px;
+        
+        text-decoration: none;
+         color: #000000;
+
+         &:hover{
+             text-decoration: underline;
+            color: #B53A27;
+         }
+    } 
+    
+    img{
+        width: 100px;
+    }
+
+}
+
+.imagem{
+    display: flex;
+    height: 800px;
+    background-color: rgba(4, 54, 5, 0.967);
+}
+
+.conteudo {
+    width: 85%;
+    max-width: 900px;
+    margin: 100px auto;
+    margin-left: 70px;
+}
+
+.subtitulo {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #e8d58d;
+    margin-bottom: 25px;
+}
+
+.subtitulo span {
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background-color: #d9534f;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    line-height: 0.95;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+h1 i {
+    color: #e8d58d;
+}
+
+p {
+    width: 600px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d8ddd9;
+    margin-bottom: 25px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.numeros {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #f5f0e8;
+    padding: 40px;
+}
+
+.numeros h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    color: #102820;
+    margin: 0;
+}
+
+.numeros p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #65716c;
+}
+
+.conteudo2 {
+    width: 90%;
+    margin: 50px;
+    background-color:;
+}
+
+.conteudo2 div {
+    display: inline-block;
+    width: 30%;
+    padding: 30px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.conteudo2 h2 {
+    font-size: 28px;
+}
+
+.conteudo2 small {
+    color: #c84b3c;
+}
+
+.conteudo2 p {
+    color: #65716c;
+    line-height: 1.5;
+}
+
+.pessoas {
+    background-color: #ead99d;
+    padding: 200px;
+    align-items: center;
+}
+
+.pessoas div {
+    width: 45%;
+    float: left;
+    margin: 20px;
+}
+
+.pessoas img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+.pessoas h2 {
+    font-size: 25px;
+}
+
+.pessoas p {
+    font-size: 16px;
+    color: black;
+}
