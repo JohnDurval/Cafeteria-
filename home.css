@@ -2,3 +2,30 @@
     padding: 0;
     margin: 0;
 }
+
+header
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 400px;
+    padding: 20px;
+    background-color: #172923;
+    color: white;
+    
+    img{
+        width: 60px;
+    }
+}
+:root{
+    Fundo creme principal: #F4EFE5
+    Verde escuro principal: #172923
+    Bege/amarelo da seção de destaque: #E9D9A3
+    Vermelho queimado dos destaques e itálicos: aproximadamente #B53A27
+    Branco quente: aproximadamente #FFFFF6
+    Cinza/bege para bordas e divisórias: aproximadamente #E9E5DC
+    Preto usado em alguns textos e elementos: #000000
+}
