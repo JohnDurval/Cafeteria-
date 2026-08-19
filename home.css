@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: IBM Plex Mono;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #F4EFE5;
+    font-family: IBM Plex Mono;
+    nav{
+        display: flex;
+        gap: 22px;
+        
+    }
+
+    .Home{
+        border-bottom: solid #B53A27;
+    }
+    
+    a{  
+        font-size: 15px;
+        
+        text-decoration: none;
+         color: #000000;
+
+         &:hover{
+             text-decoration: underline;
+            color: #B53A27;
+         }
+    } 
+    
+    img{
+        width: 100px;
+    }
+
+}
+
+
+.verCardapio{
+    display: flex;
+    align-items: center;
+    
+    img{
+        width: 15px;
+    }
+}
+
+
+.heroHome {
+    width: 100%;
+    display: flex;
+
+    overflow: hidden;
+
+    background-color: #F4EFE5;
+}
+
+.esquerdaHero {
+    width: 50%;
+    min-height: 100vh;
+
+    background-color: #172923;
+    color: #FFFFF6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 7.5%;
+
+    box-sizing: border-box;
+}
+
+.linha1 {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 0 28px 0;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #E9D9A3;
+}
+.linha1::before {
+    content: "";
+
+    width: 22px;
+    height: 1px;
+
+    background-color: #B53A27;
+
+    display: block;
+}
+
+
+
+.esquerdaHero h1 {
+    max-width: 620px;
+
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(58px, 5.5vw, 86px);
+
+    font-weight: 400;
+
+    line-height: 0.91;
+
+    letter-spacing: -2px;
+
+    color: #FFFFF6;
+}
+
+.ritual {
+    display: inline;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-style: italic;
+    font-weight: 500;
+
+    color: #E9D9A3;
+}
+
+.esquerdaHero p {
+    width: 430px;
+
+
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 16px;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #E9E5DC;
+}
+
+.rua{
+    width: 600px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.linkHero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 42px;
+    
+    img{
+        width: 20px;
+
+    }
+}
+
+.linkHero a {
+
+    display: flex;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 30px;
+
+    color: #E9E5DC;
+
+    text-decoration: none;
+
+ 
+}
+
+
+.linkHero a:hover {
+    color: #E9D9A3;
+}
+
+.fechado {
+    color: #B53A27;
+}
+
+.direitaHero {
+    width: 50%;
+    min-height: 100vh;
+
+    background-color: #E9D9A3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 5%;
+
+    box-sizing: border-box;
+}
+
+.imagemDireita {
+    position: relative;
+
+    width: 100%;
+    max-width: 550px;
+}
+
+
+.imagemDireita > img {
+    display: block;
+
+    width: 100%;
+    height: 620px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border: none;
+}
+
+.caixinha {
+    position: absolute;
+
+    right: -12px;
+    
+    bottom: 0;
+
+    width: 175px;
+    min-height: 58px;
+
+    display: flex;
+
+    background-color: #FFFFF6;
+
+
+    box-sizing: border-box;
+}
+
+.horarioCaixinha {
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 10px;
+
+    box-sizing: border-box;
+}
+
+
+.horarioCaixinha p {
+    margin-left: 8px;
+
+    font-family: "IBM Plex Mono", monospace;
+    
+    font-size: 11px;
+
+    color: #B53A27;
+}
+
+.textoCaixinha {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+.textoCaixinha p {
+
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 15px;
+
+    line-height: 1.15;
+
+    color: #000000;
+}
+
+.linhaazul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    background-color: #8EB8C1;
+    padding: 20px;
+    font-weight: bold;
+
+    img{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.antecessorCard{
+    margin-top: 100px;
+    padding: 0 70px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.escritaAntecessor{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img{
+        width: 40px;
+        
+    }
+}
+
+.coado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    img{
+        margin-top: 15px;
+        width: 20px;
+    }
+}
+.cards{
+
+    display: flex;
+    justify-content: center;
+    padding: 0 70px;
+    gap: 1px;
+    margin-bottom: 100px;
+}
+
+.card{
+    border: solid 0.1px;
+    padding: 40px;
+    width: 470px;
+    align-items: center;
+    a{
+        display: flex;
+        margin-top: 14px;
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    h3{
+        color: #B53A27;
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: 430;
+    }
+
+    h1{
+        font-family: "Cormorant Garamond", serif;
+        font-size: 36px;
+        margin-bottom: 7px;
+        font-weight: 500;
+    }
+
+    p{
+        color: #172923;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    a{
+        &:hover{
+            color: #B53A27;
+            align-items: center;
+        }
+    }
+}
+
+
+.partefinal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #E9D9A3;
+
+    p{
+
+        color: #172923;
+    }
+
+   h1{
+    font-size: 70px;
+    width: 50%;
+    
+    span{
+         font-family: "Cormorant Garamond", serif;
+        font-style: italic; 
+         color: #B53A27;
+    }
+}
+
+    .linha1final{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img{
+
+            width: 40px;
+        }
+    }
+
+    
+
+    .botao{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        
+        .botaoCardapio{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            width: 250px;
+            height: 60px;
+            padding: 5px 20px;
+
+            font-weight: 400;
+            background-color: #172923;
+            color: #FFFFF6;
+            cursor: pointer;
+            font-size: 15px;
+
+            img{
+                width: 15px;
+            }
+        }
+
+    }
+}
+
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #172923;
+    justify-content: space-evenly;
+    gap: 400px;
+    padding: 25px;
+    font-size: 14px;
+    color: white;
+    
+    
+
+    img{
+        width: 100px;
+    }
+}
+
+    /* Fundo creme principal: #F4EFE5
+    Verde escuro principal: #172923
+    Bege/amarelo da seção de destaque: #E9D9A3
+    Vermelho queimado dos destaques e itálicos: aproximadamente #B53A27
+    Branco quente: aproximadamente #FFFFF6
+    Cinza/bege para bordas e divisórias: aproximadamente #E9E5DC
+    Preto usado em alguns textos e elementos: #000000 */
