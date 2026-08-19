@@ -1,0 +1,714 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f2eee4;
+    color: #122c25;
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   SITE
+===================================================== */
+
+.site {
+    width: 100%;
+    min-height: 100vh;
+    background: #f2eee4;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+    width: 100%;
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5.2%;
+
+    border-bottom: 1px solid #d8d2c5;
+
+    background: #f2eee4;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* LOGO */
+
+.logo,
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #152d27;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.logo-box {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e9dcae;
+    color: #152d27;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo-box.small {
+    width: 19px;
+    height: 19px;
+
+    font-size: 13px;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+
+    margin-left: 100px;
+}
+
+.menu a {
+    position: relative;
+
+    font-size: 10px;
+    color: #263b35;
+
+    transition: .3s ease;
+}
+
+.menu a:hover {
+    color: #a73528;
+}
+
+.menu a.active {
+    color: #263b35;
+}
+
+.menu a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -25px;
+
+    height: 1px;
+
+    background: #b44436;
+}
+
+
+/* CARDÁPIO */
+
+.menu-cardapio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 9px;
+    letter-spacing: 1.4px;
+
+    color: #33463f;
+}
+
+.menu-cardapio span {
+    color: #a83b2d;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    width: 100%;
+    min-height: 210px;
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+    padding: 40px 5.2% 0;
+}
+
+
+/* HERO TEXTO */
+
+.hero-text {
+    padding-top: 2px;
+}
+
+.mini-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #56625d;
+
+    font-size: 7px;
+    letter-spacing: 1.1px;
+
+    margin-bottom: 17px;
+}
+
+.mini-title span {
+    width: 15px;
+    height: 1px;
+
+    background: #b23c2d;
+}
+
+
+.hero h1 {
+    max-width: 470px;
+
+    color: #122d27;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(45px, 5vw, 64px);
+    font-weight: 400;
+
+    line-height: .92;
+    letter-spacing: -3px;
+}
+
+.hero h1 em {
+    display: block;
+
+    color: #b13d2d;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: .86em;
+    font-weight: 500;
+
+    margin-top: 4px;
+}
+
+
+/* RITUAL ABAIXO DO TÍTULO */
+
+.ritual-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 12px;
+
+    color: #4e5d57;
+
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   MAPA SUPERIOR
+===================================================== */
+
+.map-top {
+    height: 125px;
+
+    position: relative;
+
+    margin-top: -1px;
+
+    border: 1px solid #d8d2c5;
+
+    overflow: visible;
+}
+
+.map-top iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+
+    opacity: .72;
+
+    filter: grayscale(15%);
+}
+
+
+/* CAIXA ROTA */
+
+.route-box {
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    width: 117px;
+
+    padding: 12px;
+
+    background: #f2eee4;
+
+    box-shadow: 0 8px 18px rgba(32, 45, 39, .12);
+
+    z-index: 3;
+}
+
+.route-box small {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #ad3c2d;
+
+    font-size: 6px;
+    letter-spacing: 1.2px;
+}
+
+.route-box button {
+    width: 100%;
+
+    border: 0;
+
+    background: #172d27;
+    color: white;
+
+    padding: 10px 7px;
+
+    font-size: 7px;
+    letter-spacing: .8px;
+
+    cursor: pointer;
+}
+
+.route-box button span {
+    float: right;
+}
+
+
+/* =====================================================
+   CONTATO
+===================================================== */
+
+.contact {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+    padding: 0 5.2%;
+
+    min-height: 348px;
+}
+
+
+/* LADO ESQUERDO */
+
+.contact-left {
+    border-top: 1px solid #d8d2c5;
+    padding-top: 30px;
+    padding-right: 48px;
+}
+
+
+/* COLUNAS */
+
+.contact-columns {
+    display: grid;
+
+    grid-template-columns: 1.25fr 1fr .9fr;
+
+    gap: 26px;
+}
+
+
+/* INFORMAÇÕES */
+
+.label {
+    display: block;
+
+    color: #ad3e30;
+
+    font-size: 7px;
+    letter-spacing: 1.4px;
+
+    margin-bottom: 10px;
+}
+
+.info h2 {
+    color: #152c26;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.35;
+}
+
+.map-link,
+.instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 13px;
+
+    font-size: 7px;
+    letter-spacing: 1px;
+
+    color: #3c514a;
+}
+
+.map-link span,
+.instagram span {
+    color: #a93a2d;
+    font-size: 13px;
+}
+
+
+/* HORÁRIOS */
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.schedule p {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    color: #4b5752;
+
+    font-size: 7px;
+}
+
+.schedule strong {
+    color: #273c35;
+
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.instagram {
+    margin-top: 13px;
+}
+
+
+/* FALE DIRETO */
+
+.direct p {
+    font-size: 8px;
+
+    color: #495752;
+
+    margin-bottom: 7px;
+}
+
+
+/* =====================================================
+   NEWSLETTER
+===================================================== */
+
+.newsletter {
+    margin-top: 29px;
+
+    border-top: 1px solid #d5cfc3;
+
+    padding-top: 23px;
+}
+
+.newsletter h2 {
+    color: #172e28;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-bottom: 17px;
+}
+
+
+.email-input {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #bcb6aa;
+}
+
+.email-input input {
+    flex: 1;
+
+    height: 30px;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #283d36;
+
+    font-size: 8px;
+}
+
+.email-input input::placeholder {
+    color: #777d77;
+}
+
+.email-input button {
+    width: 30px;
+    height: 30px;
+
+    border: 0;
+    background: transparent;
+
+    color: #ae3c2e;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.email-input button:hover {
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   MAPA PRINCIPAL
+===================================================== */
+
+.map {
+    width: 100%;
+    height: 280px;
+
+    border: 1px solid #d8d2c5;
+
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+
+    opacity: .75;
+
+    filter: grayscale(20%);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    width: 100%;
+    height: 65px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    padding: 0 5.2%;
+
+    background: #102b25;
+
+    color: #eae4d7;
+}
+
+
+/* LOGO FOOTER */
+
+.footer-logo {
+    color: #eae4d7;
+}
+
+.footer-logo .logo-box {
+    color: #19322b;
+}
+
+
+/* TEXTO */
+
+.footer p {
+    text-align: center;
+
+    font-size: 7px;
+
+    color: #c8cec8;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    text-align: right;
+
+    font-size: 7px;
+
+    color: #c8cec8;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 0 30px;
+    }
+
+    .menu {
+        margin-left: 0;
+        gap: 18px;
+    }
+
+    .menu-cardapio {
+        display: none;
+    }
+
+    .hero,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        gap: 30px;
+        padding: 40px 30px 0;
+    }
+
+    .map-top {
+        height: 200px;
+    }
+
+    .contact {
+        padding: 0 30px 40px;
+    }
+
+    .contact-left {
+        padding-right: 0;
+    }
+
+    .map {
+        margin-top: 30px;
+        height: 300px;
+    }
+
+    .footer {
+        padding: 0 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hero {
+        padding: 35px 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .contact {
+        padding: 0 20px 30px;
+    }
+
+    .contact-columns {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .newsletter {
+        margin-top: 30px;
+    }
+
+    .map {
+        height: 260px;
+    }
+
+    .footer {
+        height: auto;
+        min-height: 100px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+
+        justify-content: center;
+
+        padding: 20px;
+    }
+
+    .footer p,
+    .copyright {
+        text-align: center;
+    }
+}
