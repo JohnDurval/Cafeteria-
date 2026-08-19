@@ -16,6 +16,10 @@ header{
         gap: 22px;
         
     }
+
+    .Home{
+        border-bottom: solid #B53A27;
+    }
     
     a{  
         font-size: 15px;
@@ -37,8 +41,6 @@ header{
 
 .heroHome {
     width: 100%;
-    min-height: 100vh;
-    margin-bottom: 100px;
     display: flex;
 
     overflow: hidden;
@@ -90,6 +92,8 @@ header{
     display: block;
 }
 
+
+
 .esquerdaHero h1 {
     max-width: 620px;
 
@@ -119,23 +123,24 @@ header{
     color: #E9D9A3;
 }
 
-.esquerdaHero h1 + p {
+.esquerdaHero p {
     width: 430px;
 
-    margin: 36px 0 38px 0;
+
 
     font-family: "IBM Plex Mono", monospace;
 
-    font-size: 12px;
-
-    line-height: 1.7;
+    font-size: 16px;
+    width: 90%;
+    margin-top: 30px;
 
     color: #E9E5DC;
 }
 
 .rua{
     width: 600px;
-    font-size: 14px;
+    font-size: 15px;
+    width: 100%;
 }
 
 .linkHero {
@@ -143,40 +148,23 @@ header{
     align-items: center;
 
     gap: 38px;
-
+    margin-top: 20px;
     margin-bottom: 42px;
 }
 
 .linkHero a {
-    display: inline-flex;
-    align-items: center;
 
-
-    font-size: 10px;
+    display: flex;
+    margin-top: 20px;
+    font-size: 11px;
     font-weight: 600;
+    margin-left: 30px;
 
-    letter-spacing: 0.8px;
-
-    color: #FFFFF6;
+    color: #E9E5DC;
 
     text-decoration: none;
 
-    transition: color 0.25s ease;
-}
-.linkHero a::after {
-    content: "→";
-
-    margin-left: 9px;
-
-    color: #E9D9A3;
-
-    font-size: 12px;
-
-    transition: transform 0.25s ease;
-
-
-
-
+ 
 }
 
 
@@ -228,17 +216,16 @@ header{
     position: absolute;
 
     right: -12px;
+    
     bottom: 0;
 
     width: 175px;
     min-height: 58px;
 
     display: flex;
-    align-items: stretch;
 
     background-color: #FFFFF6;
 
-    border: 1px solid #E9E5DC;
 
     box-sizing: border-box;
 }
@@ -257,19 +244,19 @@ header{
 
 
 .horarioCaixinha p {
-    margin: 0;
+    margin-left: 8px;
 
     font-family: "IBM Plex Mono", monospace;
-
-    font-size: 9px;
+    
+    font-size: 11px;
 
     color: #B53A27;
 }
 
 .textoCaixinha {
-    flex: 1;
-
-    padding: 10px 10px 10px 0;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -295,14 +282,19 @@ header{
 }
 
 .antecessorCard{
-
+    margin-top: 100px;
+    padding: 0 70px;
+    color: #000000;
+    font-weight: 400;
 }
 
 .cards{
+
     display: flex;
     justify-content: center;
-    padding: 70px;
+    padding: 0 70px;
     gap: 1px;
+    margin-bottom: 100px;
 }
 
 .card{
@@ -345,6 +337,7 @@ header{
 .partefinal{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     justify-content: center;
     height: 500px;
@@ -355,11 +348,16 @@ header{
         color: #172923;
     }
 
-    h1{
-        color: #172923;
-        font-size: 50px;
-        
+   h1{
+    font-size: 60px;
+    width: 60%;
+    
+    span{
+        color: #B53A27;
     }
+   }
+    
+    
 
     .botao{
         margin-top: 20px;
@@ -372,6 +370,7 @@ header{
             padding: 20px;
             background-color: #172923;
             color: #FFFFF6;
+            cursor: pointer;
         }
 
     }
@@ -386,12 +385,15 @@ header{
 
 footer{
     display: flex;
+    background-color: #172923;
     justify-content: space-evenly;
     gap: 400px;
-    padding: 20px;
-    background-color: #E9E5DC;
+    padding: 25px;
+    font-size: 14px;
     color: white;
     
+    
+
     img{
         width: 60px;
     }
